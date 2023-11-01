@@ -1,0 +1,6 @@
+json\example\Database\updates\setUpdates.class
+json\example\getInfoServlet.class
+json\example\Test.class
+json\example\UpdatesServlet.class
+json\example\Database\info\getInfo.class
+json\example\Database\SetConnection.class

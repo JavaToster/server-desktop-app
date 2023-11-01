@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #696969;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.SettingsController">
+   <children>
+      <Label fx:id="labelUsername" layoutX="24.0" layoutY="14.0" prefHeight="40.0" prefWidth="120.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="88.0" prefHeight="40.0" prefWidth="120.0" text="Аккаунт" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="parametrsBtn" layoutX="151.0" layoutY="94.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="97.0" style="-fx-background-color: #708090; -fx-background-radius: 30;" text="Параметры" textFill="WHITE">
+        <items>
+          <MenuItem fx:id="renameName" mnemonicParsing="false" onAction="#toReName" text="Изменить имя" />
+          <MenuItem fx:id="renameSurname" mnemonicParsing="false" onAction="#toReSurname" text="Изменить фамилию" />
+            <MenuItem fx:id="deleteAccount" mnemonicParsing="false" onAction="#toDeleteAccount" text="Удалить аккаунт" />
+        </items>
+      </MenuButton>
+      <Button fx:id="backBtn" layoutX="501.0" layoutY="22.0" mnemonicParsing="false" onAction="#toBack" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #708090; -fx-background-radius: 30;" text="Назад" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label layoutX="300.0" layoutY="88.0" prefHeight="40.0" prefWidth="75.0" text="Счёт" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="scoreParametrsBtn" layoutX="367.0" layoutY="94.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="97.0" style="-fx-background-color: #708090; -fx-background-radius: 30;" text="Параметры" textFill="WHITE">
+         <items>
+            <MenuItem fx:id="zeroScore" mnemonicParsing="false" onAction="#toZeroScore" text="Обнулить счёт" />
+            <MenuItem fx:id="clearHistory" mnemonicParsing="false" onAction="#toClearHistory" text="Очистить историю" />
+            <MenuItem fx:id="deleteLastOperation" mnemonicParsing="false" onAction="#toDeleteLastOperation" text="Удалить последнее действие" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

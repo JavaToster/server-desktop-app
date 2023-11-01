@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #696969;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainWindow">
+   <children>
+      <TextField fx:id="inputText" layoutX="48.0" layoutY="37.0" prefHeight="36.0" prefWidth="244.0" promptText="Введите сумму" style="-fx-background-color: #696969; -fx-border-radius: 15; -fx-border-color: #FAFAFA; -fx-border-width: 3; -fx-text-inner-color: white;" />
+      <Button fx:id="topUp" layoutX="48.0" layoutY="107.0" mnemonicParsing="false" onAction="#toTopUp" prefHeight="36.0" prefWidth="89.0" style="-fx-background-color: #708090; -fx-background-radius: 30;" text="Пополнить" textFill="WHITE" />
+      <Button fx:id="writeOff" layoutX="203.0" layoutY="107.0" mnemonicParsing="false" onAction="#toWriteOff" prefHeight="36.0" prefWidth="89.0" style="-fx-background-color: #708090; -fx-background-radius: 30;" text="Списать" textFill="WHITE" />
+      <Label fx:id="firstAndLastName" layoutX="346.0" layoutY="14.0" prefHeight="36.0" prefWidth="159.0" text="Firstname Lastname" textFill="WHITE">
+         <font>
+            <Font name="Cascadia Mono Regular" size="14.0" />
+         </font></Label>
+      <Button fx:id="logOut" layoutX="515.0" layoutY="20.0" mnemonicParsing="false" onAction="#toLogOut" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #708090; -fx-background-radius: 30px;" text="Выйти" textFill="WHITE" />
+      <Label fx:id="username" layoutX="346.0" layoutY="45.0" prefHeight="36.0" prefWidth="159.0" text="username" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="history1" layoutX="384.0" layoutY="143.0" prefHeight="25.0" prefWidth="186.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="history2" layoutX="384.0" layoutY="168.0" prefHeight="25.0" prefWidth="186.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="history3" layoutX="384.0" layoutY="193.0" prefHeight="25.0" prefWidth="186.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="history4" layoutX="384.0" layoutY="218.0" prefHeight="25.0" prefWidth="186.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="history5" layoutX="384.0" layoutY="241.0" prefHeight="25.0" prefWidth="186.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="history6" layoutX="384.0" layoutY="268.0" prefHeight="25.0" prefWidth="186.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="history7" layoutX="384.0" layoutY="293.0" prefHeight="25.0" prefWidth="186.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="history8" layoutX="384.0" layoutY="318.0" prefHeight="25.0" prefWidth="186.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="history9" layoutX="384.0" layoutY="343.0" prefHeight="25.0" prefWidth="186.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="history10" layoutX="384.0" layoutY="374.0" prefHeight="25.0" prefWidth="186.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="scoreNum" layoutX="48.0" layoutY="268.0" prefHeight="83.0" prefWidth="229.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="235.0" prefHeight="36.0" prefWidth="79.0" text="БАЛАНС:" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="settingsBtn" layoutX="513.0" layoutY="51.0" mnemonicParsing="false" onAction="#toOpenSettings" style="-fx-background-color: #708090; -fx-background-radius: 30px;" text="Настройки" textFill="WHITE" />
+      <Button fx:id="seeFullHistory" layoutX="455.0" layoutY="107.0" mnemonicParsing="false" onAction="#toSeeFullHistory" style="-fx-background-color: #708090; -fx-background-radius: 30px;" text="Посмотреть историю" textFill="WHITE" />
+   </children>
+</AnchorPane>
